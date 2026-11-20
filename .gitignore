@@ -1,0 +1,11 @@
+# Gradle
+.gradle/
+build/
+local.properties
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+*.iml
+# Android
+*.apk
+*.ap_
