@@ -36,6 +36,8 @@ class MainActivity : ComponentActivity() {
 data class Caption(val text: String, val startMs: Long, val endMs: Long)
 
 @Composable
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
 fun CaptionEditorApp() {
     var videoUri by remember { mutableStateOf<Uri?>(null) }
     var captions by remember {
@@ -64,7 +66,7 @@ fun CaptionEditorApp() {
             )
         }) { padding ->
             Column(Modifier.fillMaxSize().padding(padding)) {
-                Box(Modifier.fillWeight(1f).fillMaxWidth().background(Color.Black), contentAlignment = Alignment.Center) {
+                Box(Modifier.weight(1f).fillMaxWidth().background(Color.Black), contentAlignment = Alignment.Center) {
                     if (videoUri == null) {
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                             Icon(Icons.Default.Movie, null, tint = Color(0xFF9CA3AF), modifier = Modifier.size(56.dp))
