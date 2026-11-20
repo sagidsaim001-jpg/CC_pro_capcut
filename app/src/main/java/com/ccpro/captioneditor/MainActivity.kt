@@ -35,7 +35,6 @@ class MainActivity : ComponentActivity() {
 
 data class Caption(val text: String, val startMs: Long, val endMs: Long)
 
-@Composable
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CaptionEditorApp() {
