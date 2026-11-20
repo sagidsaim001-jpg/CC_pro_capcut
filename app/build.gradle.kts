@@ -43,8 +43,6 @@ dependencies {
     implementation(libs.androidx.compose.material.icons.extended)
     implementation(libs.androidx.media3.exoplayer)
     implementation(libs.androidx.media3.ui)
-    implementation(libs.androidx.documentfile)
-    implementation(libs.mobile.ffmpeg)
 
     debugImplementation(libs.androidx.compose.ui.tooling)
 }
